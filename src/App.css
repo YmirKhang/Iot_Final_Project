@@ -35,8 +35,17 @@
   height: 1000px;
   padding-bottom: 50px;
 }
-.source_1u3yp35 {
-  height: 100px;
+
+.image-box {
+  width:30%;
+}
+
+.actual-image {
+  border: 0;
+  display: block;
+  height: 320px;
+  maxWidth: 300%;
+  width: 200px;
 }
 
 @keyframes App-logo-spin {

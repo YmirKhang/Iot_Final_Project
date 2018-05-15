@@ -113,11 +113,11 @@ class Gallery extends Component {
 			return (
 				<a
 					href={obj.src}
-					className={css(classes.thumbnail, classes[obj.orientation])}
+					className="image-box"
 					key={i}
 					onClick={(e) => this.openLightbox(i, e)}
 				>
-					<img src={obj.thumbnail} className={css(classes.source)} />
+					<img src={obj.thumbnail} className="actual-image" />
 
 				</a>
 			);
@@ -213,14 +213,7 @@ const classes = StyleSheet.create({
 	},
 
 	// actual <img />
-	source: {
-		border: 0,
-		display: 'block',
-		height: '550px',
 
-		maxWidth: '300%',
-		width: '450px',
-	},
 });
 
 export default Gallery;
