@@ -25,10 +25,10 @@ class Gallery extends Component {
 	}
     handleData(data) {
         let result = data;
-        if(result==='geldi'){
+        if(result==='geldi' && !this.state.lightboxIsOpen){
         	this.openLightbox(0,null);
 			this.updateImageStats(0);
-		}else if(result==='gitti'){
+		}else if(result==='gitti' && this.state.lightboxIsOpen){
         	this.closeLightbox()
 
 		}else if(result==='right'){
